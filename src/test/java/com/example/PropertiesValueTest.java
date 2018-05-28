@@ -5,6 +5,11 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
+import com.example.MessageType;
+import com.example.PropertiesMessageProvider;
+import com.example.PropertiesValue;
+import com.example.PropertiesValueProvider;
+
 public class PropertiesValueTest {
 
     @Test

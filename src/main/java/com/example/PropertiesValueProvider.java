@@ -8,7 +8,7 @@ import java.util.ResourceBundle;
  * propertiesファイルで定義されたシステム用の値を提供するクラスです。
  * 
  * @author atagawa
- * @since 0.0.1d 2018/05/23
+ * @since 0.0.1 2018/05/24
  */
 public class PropertiesValueProvider implements SystemValueProvider {
 

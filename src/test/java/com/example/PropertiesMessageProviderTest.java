@@ -6,6 +6,11 @@ import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
+import com.example.GeneratePasswordAppException;
+import com.example.MessageType;
+import com.example.PropertiesMessageProvider;
+import com.example.PropertiesValue;
+
 public class PropertiesMessageProviderTest {
 
     @Test

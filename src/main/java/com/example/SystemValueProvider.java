@@ -4,7 +4,7 @@ package com.example;
  * システムで管理された値を取得するメソッドを持つインターフェースです。
  * 
  * @author atagawa
- * @since 0.0.1d 2018/05/23
+ * @since 0.0.1 2018/05/24
  *
  */
 public interface SystemValueProvider {

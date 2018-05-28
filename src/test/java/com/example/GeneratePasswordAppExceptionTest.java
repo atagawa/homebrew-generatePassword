@@ -5,6 +5,8 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
+import com.example.GeneratePasswordAppException;
+
 public class GeneratePasswordAppExceptionTest {
 
     @Test

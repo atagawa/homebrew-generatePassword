@@ -4,7 +4,7 @@ package com.example;
  * propertiesファイルの値を提供するクラスインスタンスを管理するクラスです。
  * 
  * @author atagawa
- * @since 1.0.0d 2018/05/23
+ * @since 1.0.0 2018/05/24
  */
 public class PropertiesValue {
 

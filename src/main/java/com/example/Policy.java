@@ -4,7 +4,7 @@ package com.example;
  * パスワードポリシーを保持するエンティティクラスです。
  * 
  * @author atagawa
- * @since 1.0.0d 2018/05/23
+ * @since 1.0.0 2018/05/24
  *
  */
 public class Policy {
@@ -28,7 +28,7 @@ public class Policy {
      *            - 英字の種別。0（英字を許可しない）, 1（大文字のみ許可する）, 2（小文字のみ許可する）,
      *            3（大文字小文字混在を許可する）のみ指定可能
      * @param acceptSymbolChar
-     *            - 記号を許可するかをtrue/falseで指定する
+     *            - 記号を許可する(true)かしない(false)か
      */
     public Policy(int passwordLength, int letterCase, boolean acceptSymbolChar) {
         this.passwordLength = passwordLength;
@@ -36,17 +36,10 @@ public class Policy {
         this.acceptSymbolChar = acceptSymbolChar;
     }
 
-    /**
-     * パスワードの長さ
-     */
     private int passwordLength;
-    /**
-     * 英字の種別
-     */
+
     private int letterCase;
-    /**
-     * 記号の指定
-     */
+
     private boolean acceptSymbolChar;
 
     /**

@@ -9,6 +9,9 @@ import java.security.SecureRandom;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.example.PasswordGenerator;
+import com.example.Policy;
+
 public class PasswordGeneratorTest {
     private PasswordGenerator passwordGenerator;
 

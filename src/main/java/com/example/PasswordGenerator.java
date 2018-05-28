@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * 実際にパスワード文字列の生成を行うクラスです。
  * 
- * @since 1.0.0d 2018/05/08
+ * @since 1.0.0 2018/05/24
  * @author atagawa
  */
 public class PasswordGenerator {
@@ -69,7 +69,6 @@ public class PasswordGenerator {
             addAvailableChars(passwordSet,
                     PropertiesValue.getPropertiesValue().getDefaultAcceptedSymbolChars().toCharArray());
         }
-
         if (this.prohibitionChars != null) {
             for (char c : prohibitionChars) {
                 passwordSet.remove(c);
@@ -101,7 +100,7 @@ public class PasswordGenerator {
     /**
      * パスワード生成に使用するポリシーを取得します。
      * 
-     * @return the policy
+     * @return Policyオブジェクト
      */
     public Policy getPolicy() {
         return policy;
@@ -110,7 +109,7 @@ public class PasswordGenerator {
     /**
      * パスワード生成に使用する擬似乱数生成器を取得します。
      * 
-     * @return the randomNumberGenerator
+     * @return Randomオブジェクト
      */
     public Random getRandomNumberGenerator() {
         return randomNumberGenerator;
@@ -119,7 +118,7 @@ public class PasswordGenerator {
     /**
      * パスワード生成時の禁則文字を取得します。
      * 
-     * @return the prohibitionChars
+     * @return 禁則文字を格納したchar配列
      */
     public char[] getProhibitionChars() {
         return prohibitionChars;
@@ -129,7 +128,7 @@ public class PasswordGenerator {
      * パスワード生成時の禁則文字を設定します。
      * 
      * @param prohibitionChars
-     *            the prohibitionChars to set
+     *            - 設定する禁則文字を格納したchar配列
      */
     public void setProhibitionChars(char[] prohibitionChars) {
         this.prohibitionChars = prohibitionChars;

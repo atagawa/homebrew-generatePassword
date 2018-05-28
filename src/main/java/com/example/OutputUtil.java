@@ -4,7 +4,7 @@ package com.example;
  * メッセージの出力を管理するクラスです。
  * 
  * @author atagawa
- * @since 1.0.0d 2018/05/23
+ * @since 1.0.0 2018/05/24
  *
  */
 public interface OutputUtil {
@@ -19,7 +19,6 @@ public interface OutputUtil {
 
     /**
      * エラー用のメッセージを出力します。<br>
-     * コンソールには赤文字でメッセージが出力されます。
      * 
      * @param message
      *            - 出力するメッセージ
